@@ -55,7 +55,7 @@ Download the [COVID-19 Chest X-Ray dataset](https://www.kaggle.com/datasets/pran
 
 ### 3. Download model weights
 
-Download `best_densenet.pth` from the [Google Drive link](#) and place it in `outputs/`.
+Download `best_densenet.pth` from the [Google Drive link](https://drive.google.com/file/d/1EciMDuzTHZ4uNrYFED1OlkSF_pVTmp6J/view?usp=sharing) and place it in `outputs/`.
 
 ### 4. Run everything
 
