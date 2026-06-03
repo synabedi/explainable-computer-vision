@@ -1,4 +1,4 @@
-# 🫁 Explainable Computer Vision — Chest X-Ray Classification
+#  Explainable Computer Vision — Chest X-Ray Classification
 
 **AIMS DTU Research Intern 2026** | *Syna Bedi (25/A06/020)*
 
@@ -6,7 +6,7 @@ A DenseNet-121 classifier trained on a three-class chest X-ray dataset (COVID-19
 
 ---
 
-## 📊 Results at a Glance
+## Results at a Glance
 
 | Metric | COVID | Normal | Viral Pneumonia | Macro Avg |
 |--------|-------|--------|-----------------|-----------|
@@ -18,7 +18,7 @@ Test set: 435 images (145 per class) · Overall accuracy: **97.7%**
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 ├── dataset.py          # Dataset loader + augmentation transforms
@@ -33,7 +33,7 @@ Test set: 435 images (145 per class) · Overall accuracy: **97.7%**
 
 ---
 
-## 🚀 Quickstart
+##  Quickstart
 
 ### 1. Clone & install dependencies
 
@@ -76,7 +76,7 @@ python train.py
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 **DenseNet-121** backbone with a custom classification head:
 
@@ -96,7 +96,7 @@ Input (224×224 RGB)
 
 ---
 
-## 🔍 Explainability Methods
+##  Explainability Methods
 
 ### Grad-CAM
 Computes gradients of the predicted class score w.r.t. the final feature map (`model.features.norm5`), globally averages them to get channel weights, and produces a weighted heatmap. Spatially coarse (7×7 before upsampling) but strongly class-discriminative.
@@ -106,7 +106,7 @@ Modifies ReLU backward hooks to pass only gradients that are both positive and e
 
 ---
 
-## 📐 Quantitative XAI Evaluation
+##  Quantitative XAI Evaluation
 
 | Metric | Grad-CAM | Guided Backprop |
 |--------|----------|-----------------|
@@ -118,7 +118,7 @@ Modifies ReLU backward hooks to pass only gradients that are both positive and e
 
 ---
 
-## 🧪 Bonus Task — Multi-Baseline Deletion (OOD Mitigation)
+## Bonus Task — Multi-Baseline Deletion (OOD Mitigation)
 
 **Problem:** Standard deletion replaces pixels with black zeros, creating an out-of-distribution (OOD) artefact. The model was never trained on images with black holes, so confidence drops may partly reflect distribution shift rather than removal of truly informative content.
 
@@ -134,7 +134,7 @@ Modifies ReLU backward hooks to pass only gradients that are both positive and e
 
 ---
 
-## 📦 Outputs & Assets
+##  Outputs & Assets
 
 All generated outputs are available on Google Drive: **[Link to Drive](#)**
 
@@ -154,7 +154,7 @@ All generated outputs are available on Google Drive: **[Link to Drive](#)**
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 ```
 torch >= 2.0
@@ -169,13 +169,13 @@ numpy
 
 ---
 
-## 📄 Report
+##  Report
 
 The full project report (methodology, results, explainability analysis, limitations, and future work) is included as `EXPLAINABLE_COMPUTER_VISION.pdf`.
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - **Guided Grad-CAM** — element-wise product of Grad-CAM and Guided Backprop for pixel-sharp, class-discriminative maps
 - **Vision Transformer** backbone with native attention rollout
@@ -185,4 +185,4 @@ The full project report (methodology, results, explainability analysis, limitati
 
 ---
 
-*Project completed for the AIMS DTU Research Internship 2026.*
+
