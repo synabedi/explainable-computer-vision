@@ -28,7 +28,6 @@ Test set: 435 images (145 per class) · Overall accuracy: **97.7%**
 ├── evaluate_xai.py     # Quantitative XAI: entropy, deletion/insertion AOPC
 ├── bonus_task.py       # Multi-baseline deletion OOD study
 ├── run_all.py          # Master runner (phases 1–4 in order)
-└── outputs/            # Generated plots and metrics (see Google Drive link)
 ```
 
 ---
