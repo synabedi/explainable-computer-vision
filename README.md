@@ -135,7 +135,7 @@ Modifies ReLU backward hooks to pass only gradients that are both positive and e
 
 ##  Outputs & Assets
 
-All generated outputs are available on Google Drive: **[Link to Drive](#)**
+All generated outputs are available on Google Drive: **[Link to Drive](https://drive.google.com/drive/folders/1YgEM8j8K8Ga3Q-1xn3tODYYAZMiNjSpj?usp=sharing)**
 
 | File | Description |
 |------|-------------|
